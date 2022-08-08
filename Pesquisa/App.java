@@ -21,6 +21,7 @@ public class App {
             for (int j = 0; j < repeticoes; j++) {
                 int v[] = Pesquisa.vetorAleatorio(i);
                 int chave = v[((int) (Math.random() * i))];
+                chave = 999999999;
                 
                 somaSequencial += Pesquisa.pesquisaSequencial(chave, v);
                 somaSequencialSentinela += Pesquisa.pesquisaSequencialSentinela(chave, v);
@@ -40,4 +41,10 @@ public class App {
 
         writer.close();
     }
+
+
+
+
+
+    
 }
